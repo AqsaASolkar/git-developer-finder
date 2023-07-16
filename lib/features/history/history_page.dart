@@ -50,11 +50,16 @@ class _HistoryPageState extends ConsumerState<HistoryPage> {
 
   Widget _content() {
     return Container(
-      child: ListView.builder(
-          itemCount: userSearchHistoryList.length,
-          itemBuilder: (BuildContext context, int index) {
-            return _userTile(userSearchHistoryList[index]);
-          }),
+      child: userSearchHistoryList.isNotEmpty
+          ? ListView.builder(
+              itemCount: userSearchHistoryList.length,
+              itemBuilder: (BuildContext context, int index) {
+                return _userTile(userSearchHistoryList[index]);
+              })
+          : const Center(
+              child: Text("No Search History Found!",
+                  style: TextStyle(color: color0079FE, fontSize: 20)),
+            ),
     );
   }
 

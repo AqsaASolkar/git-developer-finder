@@ -133,12 +133,17 @@ class _UserSearchPageState extends ConsumerState<UserSearchPage> {
                 : const SizedBox.shrink();
   }
 
+  void navigateToUserDetails(User user) {
+    _searchController.text = '';
+    ref.read(searchUserProvider.notifier).clearState();
+    context.pushNamed('user_detail',
+        pathParameters: {'userName': user.login ?? ""});
+  }
+
   Widget _userTile(User user) {
     return GestureDetector(
       onTap: () {
-        ref.read(searchUserProvider.notifier).clearState();
-        context.goNamed('user_detail',
-            pathParameters: {'userName': user.login ?? ""});
+        navigateToUserDetails(user);
       },
       child: Container(
         margin: const EdgeInsets.fromLTRB(0, 10, 20, 10),
@@ -168,9 +173,7 @@ class _UserSearchPageState extends ConsumerState<UserSearchPage> {
           ),
           trailing: TextButton(
             onPressed: () {
-              ref.read(searchUserProvider.notifier).clearState();
-              context.goNamed('user_detail',
-                  pathParameters: {'userName': user.login ?? ""});
+              navigateToUserDetails(user);
             },
             child: const Text(
               "View \nProfile",

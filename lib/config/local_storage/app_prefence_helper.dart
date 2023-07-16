@@ -9,9 +9,13 @@ class AppPreference {
   static String USER_SEARCH_KEY = 'USER_SEARCH';
   Future<void> setUserSearchHistory(
       {required String userSearch, bool isDelete = false}) async {
-    isDelete
-        ? userSearchHistoryList.remove(userSearch)
-        : userSearchHistoryList.add(userSearch);
+    if (isDelete) {
+      userSearchHistoryList.remove(userSearch);
+    } else {
+      if (!userSearchHistoryList.contains(userSearch)) {
+        userSearchHistoryList.add(userSearch);
+      }
+    }
     var _preferences = await SharedPreferences.getInstance();
     _preferences.setStringList(USER_SEARCH_KEY, userSearchHistoryList);
   }

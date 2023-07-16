@@ -34,14 +34,14 @@ class _HomePageState extends State<HomePage> {
           20.height,
           TextButton(
               onPressed: () {
-                context.goNamed(UserSearchPage.path);
+                context.pushNamed(UserSearchPage.path);
               },
-              child: const Text("Search developer",
+              child: const Text("Search Developer",
                   style: TextStyle(fontSize: 18, color: color0079FE))),
           20.height,
           TextButton(
               onPressed: () {
-                context.goNamed(HistoryPage.path);
+                context.pushNamed(HistoryPage.path);
               },
               child: const Text(
                 "Find history",
