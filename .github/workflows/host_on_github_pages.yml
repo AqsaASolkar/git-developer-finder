@@ -50,6 +50,6 @@ jobs:
         run: flutter build web --base-href=/git-developer-finder/
 
       - name: Deploy to GitHub Pages 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
+        uses: aqsaasolkar/github-pages-deploy-action@v4
         with:
           folder: build/web
