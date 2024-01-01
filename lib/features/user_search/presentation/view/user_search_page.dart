@@ -61,7 +61,7 @@ class _UserSearchPageState extends ConsumerState<UserSearchPage> {
 
   Widget _title() {
     return const Text(
-      "Search github user",
+      "Search github user1",
       style: TextStyle(
           fontSize: 22, color: Colors.white, fontWeight: FontWeight.w400),
     );
