@@ -179,8 +179,8 @@ class _UserDetailPageState extends ConsumerState<UserDetailPage> {
     return Column(children: [
       _repoLinkAndLocationTile(
           iconData: Icons.location_on_rounded, title: userState.data.location),
-      _repoLinkAndLocationTile(
-          iconData: Icons.link, title: userState.data.reposUrl, repoLink: true),
+      // _repoLinkAndLocationTile(
+      //     iconData: Icons.link, title: userState.data.reposUrl, repoLink: true),
       _repoLinkAndLocationTile(
           iconData: Icons.business, title: userState.data.company),
     ]);
