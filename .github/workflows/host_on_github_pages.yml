@@ -52,5 +52,5 @@ jobs:
       - name: Deploy to GitHub Pages 🚀
         uses: AqsaASolkar/github-pages-deploy-action@v4
           with:
-            github_token: ${{ secrets.GITHUB_TOKEN }}
+            github_token: ${{ secrets.ACCESS_GITHUB_TOKEN }}
             publish_dir: ./build
