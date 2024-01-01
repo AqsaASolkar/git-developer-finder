@@ -14,7 +14,7 @@ class SearchUserVmStateNotifier extends StateNotifier<BaseState> {
   UserSearchInterface? userSearchInterface;
 
   Future<void> searchUser({required SearchUserReqParams queryParams}) async {
-    state = LoadingState();
+    state = const LoadingState();
     try {
       var response = await _searchUserUseCase.searchUser(queryParams);
       response.fold((l) {

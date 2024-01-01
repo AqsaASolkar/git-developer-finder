@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:git_developer_search_app/config/local_storage/app_prefence_helper.dart';
-import 'package:git_developer_search_app/config/local_storage/search_object.dart';
-import 'package:git_developer_search_app/extension/extension.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../config/theme/app_colors.dart';

@@ -1,7 +1,5 @@
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
-import 'package:dio/src/options.dart';
-import 'package:dio/src/response.dart';
 import 'package:git_developer_search_app/core/error/error_code_handling.dart';
 import 'package:git_developer_search_app/core/error/failure.dart';
 import 'package:git_developer_search_app/core/request_params/request_params.dart';

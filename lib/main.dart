@@ -3,7 +3,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:git_developer_search_app/config/dependency_injection/dependency_injection.dart';
 
 import 'config/theme/app_theme.dart';
-import 'features/user_search/presentation/view/user_search_page.dart';
 import '././config/routing/routing.dart';
 
 void main() {

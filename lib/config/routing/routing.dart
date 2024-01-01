@@ -20,13 +20,13 @@ final GoRouter router = GoRouter(
         return UserSearchPage(
           userName: user,
         );
-        if (state.queryParameters["userName"] != null &&
-            state.queryParameters["userName"]!.isNotEmpty) {
-          return UserSearchPage(
-              userName: state.queryParameters["userName"] ?? "");
-        } else {
-          return const UserSearchPage();
-        }
+        // if (state.queryParameters["userName"] != null &&
+        //     state.queryParameters["userName"]!.isNotEmpty) {
+        //   return UserSearchPage(
+        //       userName: state.queryParameters["userName"] ?? "");
+        // } else {
+        //   return const UserSearchPage();
+        // }
       },
     ),
     GoRoute(

@@ -5,10 +5,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:git_developer_search_app/core/error/failure.dart';
 import 'package:git_developer_search_app/core/state/base_state.dart';
 import 'package:git_developer_search_app/extension/extension.dart';
-import 'package:git_developer_search_app/features/user_detail/presentation/view/user_detail_page.dart';
 import 'package:git_developer_search_app/features/user_search/data/model/search_user_model.dart';
 import 'package:git_developer_search_app/features/user_search/domain/use_case/search_user_use_case.dart';
-import 'package:git_developer_search_app/features/user_search/presentation/interface/user_search_interface.dart';
 import 'package:git_developer_search_app/features/user_search/presentation/view_model/search_user_vm.dart';
 import 'package:go_router/go_router.dart';
 
