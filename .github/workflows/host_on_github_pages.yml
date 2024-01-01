@@ -47,7 +47,7 @@ jobs:
         run: flutter test
 
       - name: Build Web App
-        run: flutter build web --base-href=/git-developer-finder/
+        run: flutter build web --base-href=/git_developer_search_app/
 
       - name: Deploy to GitHub Pages 🚀
         uses: AqsaASolkar/github-pages-deploy-action@v4
